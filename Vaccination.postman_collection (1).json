@@ -1,0 +1,1204 @@
+{
+	"info": {
+		"_postman_id": "b4584a01-a220-4ff3-b772-e701381625be",
+		"name": "Vaccination",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vaccines",
+			"item": [
+				{
+					"name": "add vaccine sinopharm",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"sinopharm\",\r\n    \"quantity\": 200000\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add vaccine pfizer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pfizer\",\r\n    \"quantity\": \"1200\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add vaccine sinovac",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"sinovac\",\r\n    \"quantity\": 150000 \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add vaccine astrazeneca",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"astrazeneca\",\r\n    \"quantity\": 2500000\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add vaccine moderna",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"moderna\",\r\n    \"quantity\": 500000 \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add vaccine jonson",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"jonson\",\r\n    \"quantity\": 170000 \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add existing vaccine sinopharm",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"sinopharm\",\r\n    \"quantity\": 150000 \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add invalid quantity for vaccine",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test\",\r\n    \"quantity\": 11111\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/vaccines/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all vaccines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "get vaccine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinovac",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinovac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get guideline",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinovac/guideline",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinovac",
+								"guideline"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete vaccine",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinopharm",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinopharm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete non-existing vaccine",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/test",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get non-existing vaccine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/test",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update vaccine quantity",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinopharm?quantity=30000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinopharm"
+							],
+							"query": [
+								{
+									"key": "quantity",
+									"value": "30000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update non-existing vaccine",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinovac?quantity=150000",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinovac"
+							],
+							"query": [
+								{
+									"key": "quantity",
+									"value": "150000"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "test user",
+					"item": [
+						{
+							"name": "register new user Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"firstName\": \"Elon\",\r\n    \"lastName\":  \"Musk\",\r\n    \"serialNumber\": \"01234567891\",\r\n    \"birthDate\": \"1971-06-28\",\r\n    \"vaccine\": \"sinopharm\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-07-20\"\r\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/registration",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test first dose",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration/user/12345678900",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration",
+										"user",
+										"12345678900"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test vaccine quantity after first registration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/vaccines/pfizer",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vaccines",
+										"pfizer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register second dose",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration?serialNumber=12345678900&date=2021-08-20",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration"
+									],
+									"query": [
+										{
+											"key": "serialNumber",
+											"value": "12345678900"
+										},
+										{
+											"key": "date",
+											"value": "2021-08-20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test second dose",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration/user/12345678900",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration",
+										"user",
+										"12345678900"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test vaccine quantity after second registration Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/vaccines/pfizer",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vaccines",
+										"pfizer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete second registration",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration/12345678900",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration",
+										"12345678900"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test after second dose delete",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration/user/12345678900",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration",
+										"user",
+										"12345678900"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test vaccine quantity after delete second registration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/vaccines/pfizer",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vaccines",
+										"pfizer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete first dose registration",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration/12345678900",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration",
+										"12345678900"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test after first dose registration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/registration/user/12345678900",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"registration",
+										"user",
+										"12345678900"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "test vaccine quantity after delete first registration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/vaccines/pfizer",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"vaccines",
+										"pfizer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "register new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Elon\",\r\n    \"lastName\":  \"Musk\",\r\n    \"serialNumber\": \"01234567891\",\r\n    \"birthDate\": \"1971-06-28\",\r\n    \"vaccine\": \"sinopharm\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-07-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test vaccine quantity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinopharm",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinopharm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register 2 user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"firstName\": \"Mariam\",\r\n    \"lastName\":  \"Klibadze\",\r\n    \"serialNumber\": \"01004077391\",\r\n    \"birthDate\": \"2000-06-08\",\r\n    \"vaccine\": \"sinopharm\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-06-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test vaccine quantity Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinopharm",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinopharm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get users by serial number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/user/01234567891",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"user",
+								"01234567891"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get User By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/user?firstName=Elon&lastName=Musk",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"user"
+							],
+							"query": [
+								{
+									"key": "firstName",
+									"value": "Elon"
+								},
+								{
+									"key": "lastName",
+									"value": "Musk"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Users By Dose And Vaccine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/sinovac/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"sinovac",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Appointments By Vaccine",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/sinovac",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"sinovac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register for second dose",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/register?serialNumber=01004077391&",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register"
+							],
+							"query": [
+								{
+									"key": "serialNumber",
+									"value": "01004077391"
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register invalid date on second dose",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration?serialNumber=01234567892&date=2020-01-01",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							],
+							"query": [
+								{
+									"key": "serialNumber",
+									"value": "01234567892"
+								},
+								{
+									"key": "date",
+									"value": "2020-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register invalid user for second dose",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration?serialNumber=01234567895&date=2021-08-10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							],
+							"query": [
+								{
+									"key": "serialNumber",
+									"value": "01234567895"
+								},
+								{
+									"key": "date",
+									"value": "2021-08-10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "test vaccine quantity after registration on second dose",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/vaccines/sinopharm",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vaccines",
+								"sinopharm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register invalid vaccine",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\":  \"Zuckerberg\",\r\n    \"serialNumber\": \"01234567894\",\r\n    \"birthDate\": \"1984-05-14\",\r\n    \"vaccine\": \"test\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-06-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register invalid date",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\":  \"Zuckerberg\",\r\n    \"serialNumber\": \"01234567894\",\r\n    \"birthDate\": \"1984-05-14\",\r\n    \"vaccine\": \"moderna\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-05-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register invalid age",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\":  \"Zuckerberg\",\r\n    \"serialNumber\": \"01234567894\",\r\n    \"birthDate\": \"2004-05-14\",\r\n    \"vaccine\": \"test\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-06-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register existing user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\":  \"Zuckerberg\",\r\n    \"serialNumber\": \"01234567893\",\r\n    \"birthDate\": \"1984-05-14\",\r\n    \"vaccine\": \"test\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-06-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register on second dose without first dose",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\":  \"Zuckerberg\",\r\n    \"serialNumber\": \"01234567894\",\r\n    \"birthDate\": \"1984-05-14\",\r\n    \"vaccine\": \"sinovac\",\r\n    \"dose\": \"2\",\r\n    \"vaccinationDate\": \"2021-06-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register new user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mark\",\r\n    \"lastName\":  \"Zuckerberg\",\r\n    \"serialNumber\": \"01234567894\",\r\n    \"birthDate\": \"1984-05-14\",\r\n    \"vaccine\": \"moderna\",\r\n    \"dose\": \"1\",\r\n    \"vaccinationDate\": \"2021-06-20\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/registration",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user on first dose",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/01234567894",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"01234567894"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete non-existing user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/01234567893",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"01234567893"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user on second dose",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/registration/01234567891",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"registration",
+								"01234567891"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user by serial number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
