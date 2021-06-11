@@ -1,0 +1,18 @@
+Who can take the vaccine?
+
+Vaccination is recommended for persons with comorbidities that have been identified as
+increasing the risk of severe COVID-19, including obesity, cardiovascular disease and respiratory disease.
+The vaccine can be offered to people who have had COVID-19 in the past.
+
+Who is the vaccine not recommended for?
+
+Individuals with a history of anaphylaxis to any component of the vaccine should not take it.
+Persons with acute PCR-confirmed COVID-19 should not be vaccinated until after they have recovered
+from acute illness and the criteria for ending isolation have been met.
+Anyone with a body temperature over 38.5°C should postpone vaccination until they no longer have a fever.
+
+How efficacious is the vaccine?
+
+A large phase 3 trial in Brazil showed that two doses, administered at an interval of 14 days,
+had an efficacy of 51% against symptomatic SARS-CoV-2 infection,
+100% against severe COVID-19, and 100% against hospitalization starting 14 days after receiving the second dose.
